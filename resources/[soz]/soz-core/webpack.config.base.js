@@ -82,6 +82,7 @@ const createConfig = (entry, isProduction, variables = {}, port = undefined, tar
                                     '@public/*': ['src/*'],
                                     '@private/*': privateAlias,
                                     '@core/*': ['src/core/*'],
+                                    '@ctrl/*': ['ctrl/*'],
                                 },
                             },
                             sourceMaps: !isProduction,

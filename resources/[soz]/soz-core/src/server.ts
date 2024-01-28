@@ -1,6 +1,7 @@
 import 'reflect-metadata';
 
 import { modules as PrivateModules } from '@private/server/modules';
+import { modules as CTRLModules } from '@ctrl/server/modules';
 
 import { Application } from './core/application';
 import { setService, setServiceInstance, unloadContainer } from './core/container';
@@ -106,7 +107,8 @@ async function bootstrap() {
         DMCModule,
         HousingModule,
         UtilsModule,
-        ...PrivateModules
+        ...PrivateModules,
+        ...CTRLModules
     );
 
     await app.stop();

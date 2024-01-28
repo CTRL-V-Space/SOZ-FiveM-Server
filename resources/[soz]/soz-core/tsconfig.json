@@ -15,12 +15,14 @@
             "@public/*": ["src/*"],
             "@private/*": ["../../../../private/soz-core-src/*", "private/*"],
             "@core/*": ["src/core/*"],
+            "@ctrl/*": ["ctrl/*"],
         }
     },
     "include": [
         "src/**/*",
         "../../../../private/soz-core-src/**/*",
         "private/**/*",
+        "ctrl/**/*",
     ],
     "ts-node": {
         "swc": true

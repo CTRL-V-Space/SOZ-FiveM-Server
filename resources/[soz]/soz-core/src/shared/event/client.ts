@@ -294,4 +294,10 @@ export enum ClientEvent {
     VANDALISM_UPDATE_PROP = 'soz-core:client:vandalism:update-prop',
 
     ANIMATION_FX = 'soz-core:client:animation:fx',
+
+    FBI_APPLY_OUTFIT = 'soz-core:client:fbi:ApplyDutyClothing',
+    
+    NIA_APPLY_OUTFIT = 'soz-core:client:nia:ApplyDutyClothing',
+
+    USMS_APPLY_OUTFIT = 'soz-core:client:usms:ApplyDutyClothing',
 }

@@ -29,6 +29,8 @@ export enum JobType {
     FDF = 'fdf',
     SASP = 'sasp',
     DMC = 'dmc',
+    NIA = 'nia',
+    USMS = 'usms',
 }
 
 export const BASE_FDO = [JobType.LSPD, JobType.BCSO];
@@ -107,12 +109,14 @@ export const JobLabel: Record<JobType, string> = {
     [JobType.Pawl]: 'Pipe And Wooden Leg',
     [JobType.Ffs]: 'Fight For Style',
     [JobType.Baun]: 'Bahama Unicorn',
-    [JobType.FBI]: 'Federal Bureau of Investigation',
+    [JobType.FBI]: 'Federal Investigation Bureau',
     [JobType.MDR]: 'Mandatory',
     [JobType.Gouv]: 'Gouvernement',
     [JobType.FDF]: 'Ferme de Fou',
     [JobType.SASP]: 'San Andreas State Police',
     [JobType.DMC]: 'DeMetal Company',
+    [JobType.NIA]: 'National Investigation Agency',
+    [JobType.USMS]: 'United States Marshals Service',
 };
 
 export type JobPermissionData = {

@@ -1,5 +1,6 @@
 import { Job, JobPermission, JobPermissionData, JobType } from '../job';
 import { BoxZone } from '../polyzone/box.zone';
+import { CTRLJobRegistry } from '@ctrl/shared/job/config';
 
 const BasePermissions: Partial<Record<JobPermission, JobPermissionData>> = {
     [JobPermission.Enrollment]: { label: 'Gestion des recrutements' },
@@ -54,7 +55,7 @@ export const JobRegistry: Record<JobType, Omit<Job, 'id'>> = {
         canReceiveSocietyInvoice: false,
     },
     [JobType.FBI]: {
-        label: 'Federal Bureau of Investigation',
+        label: 'Federal Investigation Bureau',
         platePrefix: 'FBI ',
         menuCallback: 'soz-jobs:client:police:OpenSocietyMenu',
         permissions: {
@@ -562,4 +563,5 @@ export const JobRegistry: Record<JobType, Omit<Job, 'id'>> = {
             secondary: { ZoneName: 'Resell:LSCustom', SourceAccount: 'farm_dmc', TargetAccount: 'safe_dmc' },
         },
     },
+    ...CTRLJobRegistry,
 };

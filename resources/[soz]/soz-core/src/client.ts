@@ -2,6 +2,7 @@ import 'reflect-metadata';
 import './globals';
 
 import { modules as PrivateModules } from '@private/client/modules';
+import { modules as CTRLModules } from '@ctrl/client/modules';
 
 import { AdminModule } from './client/admin/admin.module';
 import { AfkModule } from './client/afk/afk.module';
@@ -117,7 +118,8 @@ async function bootstrap() {
         DMCModule,
         JobTemporaryModule,
         UtilsModule,
-        ...PrivateModules
+        ...PrivateModules,
+        ...CTRLModules
     );
 
     await app.stop();

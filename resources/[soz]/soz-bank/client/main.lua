@@ -29,12 +29,13 @@ AddEventHandler("locations:zone:exit", function(bankType, bankName)
     end
 end)
 
-local bankSociety = BoxZone:Create(vector3(246.43, 223.79, 106.29), 2.0, 15.0, {
+local bankSociety = BoxZone:Create(vector3(-1308.91, -825.34, 17.15), 13.6, 20.8, {
     name = "bank_society",
-    heading = 340,
-    minZ = 105.29,
-    maxZ = 108.29,
+    heading=36,
+    minZ=16.15,
+    maxZ=21.15
 })
+
 bankSociety:onPlayerInOut(function(isPointInside, point)
     isInsideEntrepriseBankZone = isPointInside
 end)
@@ -91,6 +92,14 @@ CreateThread(function()
                     coords = coords,
                     sprite = 108,
                     color = 28,
+                    scale = 1.0,
+                })
+            elseif bank == "maze1" then
+                QBCore.Functions.CreateBlip("bank_" .. bank, {
+                    name = "Maze Bank",
+                    coords = coords,
+                    sprite = 733,
+                    --color = 28,
                     scale = 1.0,
                 })
             elseif string.match(bank, "fleeca%d+") then

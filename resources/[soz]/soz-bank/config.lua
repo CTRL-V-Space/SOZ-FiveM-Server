@@ -240,6 +240,9 @@ Config.BankPedLocations = {
     ["fleeca6"] = vector4(1175.01, 2708.3, 38.09, 176.68),
     ["fleeca7"] = vector4(-112.26, 6471.04, 31.63, 132.8),
     ["fleeca8"] = vector4(5057.64, -5193.98, 2.48, 99.10),
+    ["maze1"] = vector4(-1311.56, -823.09, 17.15, 224.52),
+    ["maze2"] = vector4(-1310.16, -822.03, 17.15, 213.19),
+    ["maze3"] = vector4(-1309.00, -821.08, 17.15, 219.13),
 }
 
 Config.BankAtmDefault = {
@@ -268,6 +271,11 @@ Config.BankAtmDefault = {
         maxWithdrawal = 10000,
         limit = 15 * 60 * 1000, -- in ms
     },
+    ["maze"] = {
+        maxMoney = 6000000,
+        maxWithdrawal = nil,
+        limit = nil, -- in ms
+    },
 }
 
 Config.AtmLocations = {
@@ -287,8 +295,8 @@ Config.AtmLocations = {
     ["atm_small_-173538119"] = {accountId = "bank_fleeca4", coords = {x = -1415.481, y = -212.3324}},
     ["atm_big_683484861"] = {accountId = "bank_fleeca4", coords = {x = -1410.736, y = -98.92789}},
     ["atm_big_1318647156"] = {accountId = "bank_fleeca4", coords = {x = -1410.183, y = -100.6454}},
-    ["atm_big_-256264141"] = {accountId = "bank_fleeca4", coords = {x = -1315.416, y = -834.431}},
-    ["atm_big_1206976348"] = {accountId = "bank_fleeca4", coords = {x = -1314.466, y = -835.6913}},
+    --["atm_big_-256264141"] = {accountId = "bank_fleeca4", coords = {x = -1315.416, y = -834.431}},
+    --["atm_big_1206976348"] = {accountId = "bank_fleeca4", coords = {x = -1314.466, y = -835.6913}},
     ["atm_big_1603908035"] = {accountId = "bank_fleeca4", coords = {x = -1305.708, y = -706.6881}},
     ["atm_small_1799303130"] = {accountId = "bank_fleeca4", coords = {x = -1289.742, y = -227.165}},
     ["atm_small_-1496899310"] = {accountId = "bank_fleeca4", coords = {x = -1286.704, y = -213.7827}},

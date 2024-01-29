@@ -68,7 +68,7 @@ MySQL.ready(function()
 
         -- Create account present in configuration if not exist in database
         for k, coords in pairs(BankNotLoaded) do
-            if k ~= "pacific2" and k ~= "pacific3" then
+            if k ~= "pacific2" and k ~= "pacific3" and k ~= "maze2" and k ~= "maze3" then
                 Account.Create(k, k, "bank-atm", "bank_" .. k, nil, nil, coords)
             end
         end

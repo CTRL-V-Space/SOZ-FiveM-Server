@@ -12,7 +12,7 @@ export const useWeather = () => {
     }, [forecasts]);
 
     const getAlert = useCallback(() => {
-        return stormAlert;
+        return new Date(stormAlert * 1000);
     }, [stormAlert]);
 
     return {
